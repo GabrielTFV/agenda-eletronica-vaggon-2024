@@ -37,11 +37,30 @@ public $default = [
 ];
  ```
 
-## Executar Migrations:
+## Criar as tabelas:
 
-Execute o comando de migrations para criar as tabelas necessárias:
+Execute o comando de SQL abaixo para criar as tabelas necessárias:
 
-```php spark migrate```
+```
+USE vaggon_agenda_db;
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE activities (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    start_datetime DATETIME NOT NULL,
+    end_datetime DATETIME NOT NULL,
+    status ENUM('pendente', 'concluída', 'cancelada') NOT NULL DEFAULT 'pendente',
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
 
 4. Configurar o Servidor Web
 Para rodar o servidor embutido do PHP, execute o comando na raiz do projeto:
