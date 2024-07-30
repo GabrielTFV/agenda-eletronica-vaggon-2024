@@ -3,7 +3,7 @@
 Clone o repositório do GitHub para o seu ambiente local:
 
 ```git clone https://github.com/GabrielTFV/agenda-eletronica-vaggon-2024```
-``````
+
 ```cd seu-repositorio```
 ## Instalar Dependências
 Certifique-se de que você tem o Composer instalado. Instale as dependências do projeto com o Composer:
