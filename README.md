@@ -19,7 +19,7 @@ Crie um banco de dados no MySQL para o seu projeto. Você pode fazer isso usando
 
 Abra o arquivo de configuração do banco de dados app/Config/Database.php e atualize com as credenciais do seu banco de dados:
 
-<details>  public $default = [
+ ```public $default = [
     'DSN'      => '',
     'hostname' => 'localhost',
     'username' => 'seu_usuario',
@@ -33,7 +33,8 @@ Abra o arquivo de configuração do banco de dados app/Config/Database.php e atu
     'DBCollat' => 'utf8_general_ci',
     'returnType' => 'array',
     'pager' => 'CodeIgniter\Pager\View',
-]; </details>
+];
+ ```
 
 ## Executar Migrations (se houver):
 
