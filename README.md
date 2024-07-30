@@ -15,7 +15,7 @@ Criar o Banco de Dados:
 Crie um banco de dados no MySQL para o seu projeto. Você pode fazer isso usando um cliente MySQL ou via linha de comando:
 
 ```CREATE DATABASE vaggon_agenda_db;```
-Configurar as Credenciais:
+## Configurar as Credenciais:
 
 Abra o arquivo de configuração do banco de dados app/Config/Database.php e atualize com as credenciais do seu banco de dados:
 
