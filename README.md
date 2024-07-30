@@ -37,7 +37,7 @@ public $default = [
 ];
  ```
 
-## Executar Migrations (se houver):
+## Executar Migrations:
 
 Execute o comando de migrations para criar as tabelas necessárias:
 
