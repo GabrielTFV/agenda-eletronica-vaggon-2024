@@ -35,6 +35,12 @@ Abra o arquivo de configuração do banco de dados app/Config/Database.php e atu
     'pager' => 'CodeIgniter\Pager\View',
 ];```
 
+## Executar Migrations (se houver):
+
+Execute o comando de migrations para criar as tabelas necessárias:
+
+```php spark migrate```
+
 4. Configurar o Servidor Web
 Para rodar o servidor embutido do PHP, execute o comando na raiz do projeto:
 
